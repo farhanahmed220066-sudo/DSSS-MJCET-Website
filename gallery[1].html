@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | DSSS MJCET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/dsss-logo.jpeg" alt="DSSS MJCET Logo">
+      <div><b>DSSS</b><small>MJCET</small></div>
+    </a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="index.html#goals">Goals</a>
+      <a href="index.html#about">About</a>
+    </div>
+    <a class="nav-btn" href="index.html">← Home</a>
+  </nav>
+
+  <header class="page-head">
+    <div class="eyebrow">DSSS MJCET</div>
+    <h1>Event <span>Gallery</span></h1>
+    <p>Moments, memories and milestones from the DSSS community.</p>
+  </header>
+
+  <main class="section gallery-page">
+    <div class="gallery-top">
+      <div>
+        <div class="eyebrow">MEMORIES</div>
+        <h2>Life at DSSS</h2>
+      </div>
+      <label class="upload-demo">
+        + Add photos
+        <input id="photoInput" type="file" accept="image/*" multiple hidden>
+      </label>
+    </div>
+
+    <div id="photoGrid" class="photo-grid">
+      <div class="photo-card photo-one"><span>DSSS</span></div>
+      <div class="photo-card photo-two"><span>EVENT</span></div>
+      <div class="photo-card photo-three"><span>WORKSHOP</span></div>
+      <div class="photo-card photo-four"><span>COMMUNITY</span></div>
+      <div class="photo-card photo-five"><span>INNOVATION</span></div>
+      <div class="photo-card photo-six"><span>MJCET</span></div>
+    </div>
+
+    <div class="gallery-note">
+      <b>Photo upload preview</b>
+      <p>
+        For now, the button lets you preview local photos in the gallery.
+        Later, we'll connect it to Supabase Storage so DSSS admins can
+        permanently upload event photographs from an admin dashboard.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/dsss-logo.jpeg" alt="">
+      <div><b>DSSS MJCET</b><small>Insight Today, Impact Tomorrow.</small></div>
+    </div>
+    <p>© <span id="year"></span> Data Science Student Society, MJCET</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
